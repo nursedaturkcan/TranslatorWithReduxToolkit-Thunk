@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image:url("../public/background.png") ;
+  background-repeat: no-repeat;
+ height: 100vh;
+ background-position: center;
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+
+  /* Diğer stil ayarları */
+  backdrop-filter: blur(7px); /* Blur miktarını istediğiniz gibi ayarlayabilirsiniz */
+}
+
+
+
+.field{
+  margin-top: 40px;
+}
+
+.container{
+  width: 80vw;
+  display: flex;
+  gap: 10px;
+  background-color: rgb(176, 166, 166);
+  margin-top: 40px;
+  border-radius: 10px;
+  
+}
+h1{
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+
+}
+textarea {
+  width: 100%;
+  min-height: 300px;
+  margin-top: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+
+textarea:disabled {
+  background: rgb(179, 179, 179);
+  color: black;
+}
+
+.right,
+.left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-weight: 600;
+  margin-top: 10px;
+  border-radius: 10px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  scale: 0.98;
+  background: rgb(29, 29, 29);
+}
+
+.change-btn {
+  height: 50px;
+  width: 70px;
+}
+
+.custom-select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  width:100%;
+}
+.custom-select option[selected] {
+  background-color: black;
+  color: white;
+}
